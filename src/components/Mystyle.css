@@ -1,0 +1,9 @@
+.primary{
+    color: blue;
+    white-space: nowrap;
+    width: 100%;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+    background: red;
+}
