@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import ParentComp from './components/ParentComp';
 
 // import First from './components/first'
@@ -12,12 +12,23 @@ import './App.css';
 // import LifeCycleA from './components/LifeCycleA';
 // import Refsdemo from './components/Refsdemo';
 // import Refsold from './components/RefsOld';
-import FRParentinput from './components/FRParentinput'
+// import FRParentinput from './components/FRParentinput'
+// import Portaldemo from './Portaldemo'; 
+// import Portal2 from './Portal2';
+// import ErrorBoundary from './components/ErrorBoundary';
+// import Hero from './components/Hero';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter':
+import Counter from './components/Counter';
+import  Hover2 from './components/Hover2';
+import ClickCounter2 from './components/ClickCounter2';
+
 
 
 function App() {
   return (
     <div className="App">
+
       {/* <First/> */}
       {/* <Stylesheet/> */}
       {/* <Stylesheet primary={true}/> */}
@@ -30,7 +41,29 @@ function App() {
       {/* <ParentComp/> */}
       {/* <Refsdemo/> */}
       {/* <Refsold/>  */}
-      <FRParentinput/>
+      {/* <FRParentinput/> */}
+      {/* <Portaldemo/> */}
+      {/* <Portal2/> */}
+
+
+      {/* <ErrorBoundary>
+        <Hero heroName="Batman"></Hero>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Superman"></Hero>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="joker"></Hero>
+      </ErrorBoundary> */}
+
+      {/* <ClickCounter/>
+      <HoverCounter/> */}
+
+     <Counter render={(count,increamentCount)=> (<ClickCounter2 count={count} increamentCount={increamentCount}/>)}/>
+
+
+<Counter render={(count,increamentCount)=> (<Hover2 count={count} increamentCount={increamentCount}/>)}/>
+
     </div>
   );
 }
